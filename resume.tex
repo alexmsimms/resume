@@ -1,0 +1,168 @@
+
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,letterpaper,sans]{moderncv}    % possible options include font size ('10pt', '11pt' and '12pt'), 
+                                                   % paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper',
+                                                   %'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                              % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, 
+                                                   % '\rmdefault' for the default roman one, or any tex font name
+
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your
+                                                   % name and avoid line breaks. be careful though, the length is normally 
+                                                   % calculated to avoid any overlap with your personal info; use this at
+                                                   % your own typographical risks...
+
+% personal data
+\name{Alex}{Simms}
+%\title{Resumé title}                               
+\address{500 College Avenue}{Swarthmore, PA 19081}{}
+\phone[mobile]{(410)~259~2651}
+\email{alexmsimms@gmail.com}                       
+%\homepage{www.johndoe.com}                        
+\social[linkedin]{alexander-simms}                 
+%\social[twitter]{alexmsimms}                      
+\social[github]{alexmsimms}                        
+%\extrainfo{additional information}                
+%\photo[64pt][0.4pt]{picture}                      % '64pt' is the height the picture must be resized to, 
+                                                   % 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) 
+                                                   % and 'picture' is the name of the picture file
+%\quote{Some quote}                                
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+%-----       letter       ---------------------------------------------------------
+% recipient data
+% \recipient{}{}
+% \date{}
+% \opening{}
+% \closing{}
+% \enclosure[Attached]{R\'{e}sum\'{e}}
+% \makelettertitle
+
+% \makeletterclosing
+
+\clearpage
+
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2012--2016 (Projected)}
+        {Bachelor's in Computer Science and Linguistics}
+        {Swarthmore College}{Swarthmore, PA}
+        {\textit{3.6 GPA}}
+        {Relevant coursework: Data Structures and Algorithms, 
+                              Introduction to Computer Systems, 
+                              Natural Language Processing, 
+                              Cloud Computing and Data Center Networks,
+                              Discrete Mathematics,
+                              Algorithms}
+
+\section{Vocational Experience}
+
+\cventry{June 2015--Aug 2015}
+        {Software Development Engineer Intern}
+        {Amazon.com}
+        {Seattle}{Washington}
+        {Developed a back-end system that crawls services all across Amazon in
+          order to improve discoverability and ease of use for an
+          internal big data platform. The system was pushed to
+          production and I was responsible for its maintenence during
+          the course of the internship.}
+
+\cventry{Jan 2014--May 2015}
+        {Computer Science Ninja}
+        {Swarthmore College CS Department}
+        {Swarthmore}{Pennsylvania}
+        {Assisted professors in the teaching of Swarthmore's
+          \emph{Introduction to Computer Science}, developing
+          communication and instructional skills. \newline{}Led weekly
+          help clinics for programming assignments and quiz review.}
+
+\cventry{Summer 2014}
+        {SPEED Intern}
+        {Swarthmore College ITS Department}
+        {Swarthmore}{Pennsylvania}
+        {Implemented a one-page RESTful front-end web application for
+          the Juxta Commons text comparison back-end, using Backbone
+          as the MVC framework and Twitter Bootstrap for a design
+          framework.}
+
+\section{Academic Projects}
+
+\cvitem{\emph{MacCarthy's Revenge}}
+       {Implemented a Common Lisp Library for running Hadoop and AWS
+         MapReduce jobs for Swarthmore's \emph{Cloud Computing and 
+         Data Center Networks} course. The end result used the Hadoop
+         streaming API and allowed for MapReduce jobs to be chained 
+         together for more advanced data processing.}
+
+\cvitem{Tweet Sentiment Classifier}
+       {Implemented a hybrid sentiment classifier for Tweets, with the
+         goal of entering it in to the SemEval-2014 Task 9 competition
+         as a part of my Natural Language Processing course. The 
+         classifier used a combination of the Na\"ive Bayes Algorithm 
+         and a Neural Network to classify the sentiment of tweets as
+         positive, negative, or neutral.}
+
+\section{Programming Languages}
+\cvitemwithcomment{Python}
+                  {Advanced}
+                  {First language, go-to tool for scripting, 
+                    prototyping. Helped teach it as a ``Ninja''.}
+\cvitemwithcomment{Java}
+                  {Intermediate}
+                  {Developed Java in a service-oriented architecture.
+                    I have particular experience with Java's reflective 
+                    capabilities }
+\cvitemwithcomment{C/C++}
+                  {Intermediate}
+                  {Used extensively in coursework: 
+                    Data Structures and Algorithms, Systems.}
+\cvitemwithcomment{HTML/JS}
+                  {Intermediate}
+                  {Developed web applications with JQuery, Bootstrap, 
+                    Backbone, Underscore, and AngularJS}
+\cvitemwithcomment{Common Lisp}
+                  {Beginner}
+                  {A language I'm insensely curious about, used for one
+                    major project.}
+\cvitemwithcomment{Haskell and Clojure}
+                  {Novice}
+                  {These are both fun, incredibly interesting languages 
+                    that I have been learning on my own and enjoying
+                    tremendously.}
+
+% \section{Extracirricular Interests}
+% \cvitem{A Capella}{Sing tenor for Chaverim, a world music a capella group.}
+% \cvitem{$\Psi\Phi$}{Member of Swarthmore College's Science Fiction and Fantasy club.}
+% \cvitem{Swing Dance}{Dance with Swarthmore College's Swing Dance club.}
+
+\clearpage
+
+\end{document}
+
+% \cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+
+%% end of file `template.tex'.
